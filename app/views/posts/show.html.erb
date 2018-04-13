@@ -1,0 +1,10 @@
+<div class="col-sm-11 col-xs-12 blog-content">
+	<h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  <h2 class="text-center"><%= @post.title %></h2>
+  <div><%= raw @post.body %></div>
+</div><br>
+
+ <%= link_to "Click to delete this post!", @post, method: :delete, data: { confirm: "Really?" } %>
+
+ 
+
